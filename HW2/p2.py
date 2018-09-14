@@ -15,20 +15,22 @@ def sub1():
     for i in range(N + 1):
         for j in range(N + 1):
             print("[{:2d}]: ({:1d}, {:1d})".format(idx_mx[i, j], i, j), end='')
+            mx_op_str = []
+            vec_op_str = []
             if i == 0 or i == N or j == 0 or j == N:
-                print(' = 0')
+                mx_op_str.append("{:2d} * ({:1d}, {:1d})".format(-4, i, j))
+                vec_op_str.append("{:2d} * [{:2d}]".format(-4, idx_mx[i, j]))
+                liv.append([idx_mx[i, j], idx_mx[i, j], -4])
             else:
-                mx_op_str = []
-                vec_op_str = []
                 for (dx_i, dx_j, val) in ops:
                     mx_op_str.append("{:2d} * ({:1d}, {:1d})".format(
                                         val, i + dx_i, j + dx_j))
                     vec_op_str.append("{:2d} * [{:2d}]".format(
                                         val, idx_mx[i + dx_i, j + dx_j]))
                     liv.append([idx_mx[i, j], idx_mx[i + dx_i, j + dx_j], val])
-                mx_op_str = ' + '.join(mx_op_str)
-                vec_op_str = ' + '.join(vec_op_str)
-                print(" = {} = {}".format(mx_op_str, vec_op_str))
+            mx_op_str = ' + '.join(mx_op_str)
+            vec_op_str = ' + '.join(vec_op_str)
+            print(" = {} = {}".format(mx_op_str, vec_op_str))
     A = np.zeros(((N + 1) ** 2, (N + 1) ** 2), dtype=int)
     for i, j, v in liv:
         A[i - 1, j - 1] = v
@@ -44,7 +46,7 @@ def laplacian(N, f):
         for j in range(N + 1):
             fvec[idx_mx[i, j] - 1, 0] = f(i / N, j / N)
             if i == 0 or i == N or j == 0 or j == N:
-                pass
+                liv.append([idx_mx[i, j], idx_mx[i, j], -4])
             else:
                 for (dx_i, dx_j, val) in ops:
                     liv.append([idx_mx[i, j], idx_mx[i + dx_i, j + dx_j], val])
