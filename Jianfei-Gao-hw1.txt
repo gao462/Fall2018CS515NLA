@@ -1,0 +1,9 @@
+* Please answer Problem 0. Note that it worths on the multiplicative scale. You may receive 0 if you don't answer it from the next time.
+
+#1. (6/6)
+
+#2. (10/10)
+
+#3. (9/12) It is not guaranteed that x^{-1} exists. The correct answer is Diag(y) - H^T*Diag(y)*H. The core property used is that y^T*Diag(x) = x^T*Diag(y).
+
+#4. (32/32)﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
