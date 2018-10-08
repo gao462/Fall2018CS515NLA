@@ -1,0 +1,12 @@
+#1. (8/8)
+
+#2. (12/12)
+
+#3. (12/15)
+3-4. The statement is False. We have a counterexample: if A=[1 9;1 1], then the corresponding eigenvectors will be x1 = [3; -1] and x2 = [3; 1] which are not orthogonal.
+
+#4. (9/10) We have that (assuming the symmetry of A and the sub-multiplicativity) | lam - lam_i | = | x'Ax - xi'Axi | = | x'Ax - (x+r)'A(x+r) | = | r'(A+A')x + r'Ar | = | 2*lam*r'x + r'Ar | = | -lam*r'r + r'Ar | \leq |lam| ||r||^2 + ||A|| ||r||^2 = ( |lam| + ||A|| )eps^2 = O(eps^2). Note that we have -2*r'x = r'r provided by x'x = xi'xi = 1 and xi'xi = (x+r)'(x+r).﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+
+#5. (10/10)
+
+#6. (5/5)

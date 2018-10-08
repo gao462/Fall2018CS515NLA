@@ -164,7 +164,7 @@ def p4():
         x, record = random_coordinate_descent(A, b, thres=1e-4)
         records[len(b)]['Random Coordinate Descent'] = record
     print(time.time() - timer)
-    # plot_and_table(records, 'Laplacian', 'p4.png')
+    plot_and_table(records, 'Laplacian', 'p4.png')
     # torch.save(records, 'p4.pt')
 
 # problem 5
@@ -184,8 +184,8 @@ def p5():
     x, record = random_coordinate_descent(A, b, thres=1e-4)
     records[len(b)]['Random Coordinate Descent'] = record
     plot_and_table(records, 'Candy Land', 'p5.png')
-    torch.save(records, 'p5.pt')
+    # torch.save(records, 'p5.pt')
 
 # run problems
 p4()
-# p5()
+p5()

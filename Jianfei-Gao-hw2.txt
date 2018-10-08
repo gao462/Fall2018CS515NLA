@@ -1,0 +1,5 @@
+#1-4. Let $$\mathbf{A}=\sum_{k=1}^{\infty}kT^k$$. Then as you observed, $$\mathbf{A}=(I-T)^{-1}[(I-T)^{-1}-I]$$. Then we have $$\sum_{k=1}^{\infty}k[\mathbf{p}_k]_{134} = \mathbf{e}_{134}^T\mathbf{A}\mathbf{e}_{140} = \mathbf{e}_{140}^T\mathbf{A}^T\mathbf{e}_{134} = \mathbf{e}_{140}^T(I-T)^{-1}[(I-T)^{-1}-I]\mathbf{e}_{134} = \mathbf{e}_{140}^T(I-T)^{-1}o^{(134)} = x_{140}$$. (-3)
+
+#1-5. There should be a change for sticky cells as well. You can achieve that as you did in bridge states. That is, having zeros in RHS when i = 5, 35, 47, 86, 117, 134, 135, 136. (-1)
+
+#2-1~3. Diagonal entries should be nonzero for the rows corresponding to boundaries. For RHS, just f(x_i,y_j) would be enough. Therefore, the code you provided and the surface result are not correct. (-6)

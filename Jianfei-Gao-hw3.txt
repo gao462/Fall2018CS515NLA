@@ -1,0 +1,8 @@
+#1. (13/13)
+1.4: The easier way to prove it is that ﻿﻿﻿﻿﻿﻿﻿﻿rho(A)\leq ||A||_1 = 8, so alpha < 1/4 = 2/||A||_1 \leq 2/rho(A).
+
+#2. (12/12)
+
+#3. (13/13)
+
+#4. (12/12)
