@@ -1,0 +1,9 @@
+#1. (10/12)
+(1.4) - Some more elaboration needed. \kappa(f)_{\infty} = ||J(f)||*||x|| / ||f(W'x)|| >= ||J(f)x|| / ||f(W'x)|| = max[|wi'x|e^{wi'x}/(1+e^{wi'x})] / max \log(1+e^{wi'x}) where ' denotes the transpose. If W' has a full rank, then we can make wi'x arbitraily small as we want. Moreover, we have that lim_{t->-infty} (|t|e^t/(1+e^t))/\log(1+e^t) = \infty which implies that we can choose x to make the condition number large enough. If W' is not of full rank, then we can find a nonzero x such that W'x = 0. Then the denominator of the condition number would be a constant and by choosing x with large norm, it leads to a large condition number. Those are the possible conditions that f is ill-conditioned. (-2)﻿﻿﻿﻿
+
+#2. (6/8)
+(2.4) - The diagonal entries of S should be nonnegative. (-2)
+
+#3. (18/18)
+
+#4. (12/12)
