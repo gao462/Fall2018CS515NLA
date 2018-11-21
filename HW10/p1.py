@@ -161,5 +161,5 @@ def sub2():
     print(buffer)
 
 # run sub questions
-# sub1()
+sub1()
 sub2()

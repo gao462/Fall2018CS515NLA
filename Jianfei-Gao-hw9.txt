@@ -1,0 +1,5 @@
+#1. (8/10) - Didn't consider the reason why the denominator never becomes zero. Ax' + ry = b, z^T*x' + theta*gamma = beta => Let w be the solution for the system Aw = y. Then we have x' = x - gamma*w. Putting it to the second equation, we get z^T*x - gamma*z^T*w + theta*gamma = beta. Therefore, we have that gamma = (beta - z^T*x)/(theta - z^T*w) if the denominator is not zero. If the denominator is zero, then we have [A y; z^T theta]*[-w; 1] = [0; -z^T*w + theta] = [0; 0] = 0, which means that there exists a nonzero vector in a null space of the matrix which is contradiction because we assume that the enlarged system stays non-singular. (-2)
+
+#2. (15/15)
+
+#3. (15/15)
